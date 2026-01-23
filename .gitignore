@@ -1,0 +1,10 @@
+# Ignore everything
+/*
+
+# Whitelist specific files/directories
+!uixskills/
+!public/
+!docs/
+!uixskill.json
+!README.md
+!.gitignore

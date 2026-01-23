@@ -1,0 +1,22 @@
+{
+  "name": "uixskills",
+  "version": "1.0.0",
+  "description": "React + TypeScript UI/UX skills and components with whiteboard editor",
+  "author": "hooosberg",
+  "repository": "https://github.com/hooosberg/UIXskills",
+  "files": [
+    "components/",
+    "lib/",
+    "uixskills/",
+    "types.ts",
+    "constants.tsx"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "ui",
+    "ux",
+    "whiteboard",
+    "components"
+  ]
+}

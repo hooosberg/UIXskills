@@ -1,0 +1,22 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="url(#grad-unity)"/>
+  
+  <defs>
+    <linearGradient id="grad-unity" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F5F3FF"/>
+      <stop offset="100%" stop-color="#F0EBFF"/>
+    </linearGradient>
+    <filter id="blur-unity" x="0" y="0" width="400" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur"/>
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="150" r="120" fill="#808080" fill-opacity="0.05" filter="url(#blur-unity)"/>
+
+  <g transform="translate(200, 150)" opacity="0.6">
+      <path d="M-15 -25 L15 -25 L30 0 L15 25 L-15 25 L-30 0 Z" stroke="#000000" stroke-width="1.5" stroke-opacity="0.15" fill="none" transform="scale(1.5)" />
+      <path d="M-15 -25 L0 0 M15 -25 L0 0 M30 0 L0 0 M15 25 L0 0 M-15 25 L0 0 M-30 0 L0 0" stroke="#000000" stroke-width="1.5" stroke-opacity="0.15" fill="none" transform="scale(1.5)"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="url(#grad-claude)"/>
+  
+  <defs>
+    <linearGradient id="grad-claude" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F3F0FF"/>
+      <stop offset="100%" stop-color="#EBE4FF"/>
+    </linearGradient>
+    <filter id="blur-claude" x="0" y="0" width="400" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur"/>
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="150" r="120" fill="#D97757" fill-opacity="0.05" filter="url(#blur-claude)"/>
+
+  <g transform="translate(200, 150)" opacity="0.8">
+    <circle r="30" fill="#000000" fill-opacity="0.05"/>
+    <path d="M-15 -10 L15 -10" stroke="#000000" stroke-width="2" stroke-opacity="0.1" stroke-linecap="round"/>
+    <path d="M-15 0 L15 0" stroke="#000000" stroke-width="2" stroke-opacity="0.1" stroke-linecap="round"/>
+    <path d="M-15 10 L15 10" stroke="#000000" stroke-width="2" stroke-opacity="0.1" stroke-linecap="round"/>
+    
+    <circle cx="20" cy="-20" r="4" fill="#D97757" fill-opacity="0.4"/>
+  </g>
+</svg>
