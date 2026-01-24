@@ -31,21 +31,25 @@
 
 ---
 
-## 快速开始
+## UIXskills CLI
 
-即刻体验标准化技能的威力。无需配置。
+通过单一指令即可从 UIXskills Gallery 安装 UI/UX 技能。
 
+### 快速开始 (Quick Start)
 ```bash
-# 安装组件技能
+# 按名称安装技能
 npx uixskills add button
 
-# 从任意 GitHub 仓库安装
-npx uixskills add owner/repo
+# 安装核心库
+npx uixskills add hooosberg/UIXskills
+
+# 安装到自定义目录
+npx uixskills add button --dir ./my-skills
 ```
 
-## CLI 命令行
+### CLI 命令行 (CLI Commands)
 
-### 列表与搜索 (List & Search)
+#### 列表与搜索 (List & Search)
 ```bash
 # 列出热门技能
 npx uixskills list
@@ -54,20 +58,13 @@ npx uixskills list
 npx uixskills search glassmorphism
 ```
 
-### 高阶用法 (Advanced Usage)
+#### 高阶用法 (Advanced Usage)
+
+**从 GitHub 仓库安装 (Install from GitHub Repository)**
+你可以直接安装任何包含 `uixskill.json` 文件的仓库：
+
 ```bash
-# 按名称安装技能
-npx uixskills add button
-
-# 从任意 GitHub 仓库安装
-# 你可以直接安装任何包含 uixskill.json 文件的仓库：
 npx uixskills add owner/repo
-
-# 安装核心库
-npx uixskills add hooosberg/UIXskills
-
-# 安装到自定义目录
-npx uixskills add button --dir ./my-skills
 ```
 
 ---

@@ -31,21 +31,25 @@
 
 ---
 
-## Quick Start
+## UIXskills CLI
 
-Experience the power of standardized skills instantly. No configuration required.
+Install UI/UX skills from the UIXskills Gallery with a single command.
 
+### Quick Start
 ```bash
-# Install a component skill
+# Install a skill by name
 npx uixskills add button
 
-# Install from any GitHub repository
-npx uixskills add owner/repo
+# Install a core library
+npx uixskills add hooosberg/UIXskills
+
+# Install to a custom directory
+npx uixskills add button --dir ./my-skills
 ```
 
-## CLI Commands
+### CLI Commands
 
-### List & Search
+#### List & Search
 ```bash
 # List top skills
 npx uixskills list
@@ -54,20 +58,13 @@ npx uixskills list
 npx uixskills search glassmorphism
 ```
 
-### Advanced Usage
+#### Advanced Usage
+
+**Install from GitHub Repository**
+You can install any repository that has a `uixskill.json` file directly:
+
 ```bash
-# Install a skill by name
-npx uixskills add button
-
-# Install from any GitHub repository
-# You can install any repository that has a uixskill.json file directly:
 npx uixskills add owner/repo
-
-# Install a core library
-npx uixskills add hooosberg/UIXskills
-
-# Install to a custom directory
-npx uixskills add button --dir ./my-skills
 ```
 
 ---
