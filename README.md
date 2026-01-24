@@ -1,200 +1,92 @@
 <div align="center">
-  <img src="docs/uixskillicon.png" width="80" alt="UIX Skills Logo" />
+  <br />
+  <img src="docs/uixskillicon.png" width="100" alt="UIX Skills Logo" />
+  <br />
+  <br />
 
-  # UIX Skills
+  # UIX SKILLS
 
-  ## [🌐 UIXSKILLS.COM](https://uixskills.com)
+  **Design Standards, Codified.**
 
-  **UI/UX Gallery & Skill Whiteboard for the AI Era**
+  The protocol layer bridging Natural Language and Pixel-Perfect UI.
 
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-  [![Skills](https://img.shields.io/badge/skills-38+-green.svg)](uixskills/)
+  <br />
 
-  [English](README.md) | [中文](docs/README.zh-CN.md)
+  [![Website](https://img.shields.io/badge/website-uixskills.com-000000?style=flat-square&logo=safari&logoColor=white)](https://uixskills.com)
+  [![NPM](https://img.shields.io/npm/v/uixskills?style=flat-square&color=000000&labelColor=000000)](https://www.npmjs.com/package/uixskills)
+  [![License](https://img.shields.io/badge/license-MIT-000000?style=flat-square&color=000000)](LICENSE)
+
+  <br />
+  <br />
+
+  [English](README.md) &nbsp;·&nbsp; [简体中文](docs/README.zh-CN.md)
+
+  <br />
+  <br />
 </div>
 
----
-
-## 🌟 Core Concept: Skill Whiteboard
-
-**Don't let AI guess your design — define it with the Skill Whiteboard.**
-
-UIX Skills is both a **UI/UX Gallery** and a **Skill Whiteboard Protocol**. We provide carefully packaged "Skills" (design specification components) paired with a visual "Skill Whiteboard" that generates AI-readable precise JSON instructions.
-
-AI → JSON → Whiteboard → SKILL → UI
-
-### Why UIX Skills?
-
-- **UI/UX Gallery**: Browse 38+ curated design styles like shadcn/ui, Magic UI, and iOS native design — like visiting an art gallery.
-- **Skill Whiteboard**: A visual JSON generator. Import AI-generated drafts, drag and inject Skills from the gallery, and generate standardized JSON description files.
-- **Precise Control**: Say goodbye to the ambiguity of natural language. Tell AI with JSON: "Use `react/shadcn/button` here, with parameter `outline`" instead of "make a nice button."
+> **"Everything is a file."**
+>
+> UIXskills treats design systems not as vague descriptions, but as precise, importable, version-controlled **Skills**. We define the JSON protocol that allows AI Agents to construct interfaces with engineering precision.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### Install via npx (Recommended)
+Experience the power of standardized skills instantly. No configuration required.
 
 ```bash
-# Install a skill from GitHub
-npx uixskills add hooosberg/UIXskills
+# Install a component skill
+npx uixskills add button
 
-# Install to a custom directory
-npx uixskills add hooosberg/UIXskills --dir ./my-skills
-
-# Or install globally
-npm install -g uixskills
-uixskills add hooosberg/UIXskills
+# Install from any GitHub repository
+npx uixskills add owner/repo
 ```
 
-> **Requires Node.js 18+** | [View on npm](https://www.npmjs.com/package/uixskills)
+## The Workflow
 
-### CLI Commands
+Designed mainly for **Claude Code**, **Cursor**, and **Windsurf**.
 
-```bash
-# List top skills
-npx uixskills list
+### 01. The Protocol
+AI Agents generate layouts using our standardized **JSON Protocol** generic enough for structure, specific enough for code generation.
 
-# Search for skills
-npx uixskills search glassmorphism
-```
+### 02. The Whiteboard
+Import JSON into the [Skill Whiteboard](https://uixskills.com/whiteboard). Visually refine structure. Bind standardized interactions.
 
-### Use with Claude Code
+### 03. The Injection
+Drag "Skills" (e.g., `apple/ios-design`, `shadcn/minimal`) onto your wireframes.
 
-In Claude Code conversations, directly reference installed Skills:
-
-```
-> Please use the frontend-design skill to design a login page, with style referencing apple/ios-design
-```
-
-### Use the Skill Whiteboard
-
-1. Have AI generate a basic JSON skeleton.
-2. Open the Skill Whiteboard at [uixskills.com/whiteboard](https://uixskills.com/whiteboard).
-3. Import JSON, select Skills from the gallery to bind to components.
-4. Export the final JSON and feed it to AI for code generation.
+### 04. The Code
+Export. The AI receives explicitly referenced design tokens, not hallucinated CSS.
 
 ---
 
-## 📚 Skill Gallery Categories
+## CLI Commands
 
-The repository currently contains **38+** verified Skills covering the following areas:
+The `uixskills` command-line tool is your gateway to the registry.
 
-| 🎨 **UI Frameworks** | 📱 **Design Systems** | 🤖 **AI Automation** |
-| :--- | :--- | :--- |
-| **React / shadcn/ui**<br>Button, Toast, Command... | **Apple Platforms**<br>iOS, macOS, visionOS... | **Claude Skills**<br>Frontend Design Expert |
-| **React / Magic UI**<br>Shiny Text, Bento Grid... | **Android**<br>Material 3, Pixel Experience | **Artifacts Builder**<br>Auto-build HTML artifacts |
-| **React / Framer Motion**<br>Tabs, Lists, Gestures | **Gaming**<br>Console, RPG UI Patterns | **Test Automation**<br>Playwright, iOS Sim |
-
----
-
-## 🎯 AI Prompt: Generate Whiteboard JSON
-
-Copy the following prompt and send it to any AI (Claude/GPT/DeepSeek) to generate importable whiteboard files:
-
-````markdown
-# UIXskills Whiteboard JSON Specification
-
-You are a UI design JSON generator. Generate JSON that can be directly imported into UIXskills Whiteboard.
-
-## Shape Types (ShapeType)
-
-| Type | Description | Default Size |
-|------|-------------|--------------|
-| PHONE | iPhone frame | 375×812 |
-| TABLET | iPad frame | 768×1024 |
-| DESKTOP | Desktop browser | 1280×800 |
-| WATCH | Apple Watch | 184×224 |
-| RECTANGLE | Rectangle | 100×100 |
-| ROUNDED_RECT | Rounded rect | 100×100 |
-| CIRCLE | Circle | 100×100 |
-| BUTTON | Button | 120×44 |
-| TEXT | Text | 200×24 |
-| ICON | Icon | 24×24 |
-| LINE | Line | 100×2 |
-| STICKER | Annotation | 200×100 |
-
-## UI Roles (Optional)
-
-SCREEN, HEADER, FOOTER, SIDEBAR, CARD, BUTTON, INPUT, LIST, LIST_ITEM, IMAGE, ICON, TEXT, CONTAINER, MODAL, TAB_BAR, CUSTOM
-
-## JSON Structure
-
-```json
-{
-  "version": "1.0",
-  "title": "Project Name",
-  "shapes": [
-    {
-      "id": "unique-id",
-      "type": "PHONE",
-      "x": 100,
-      "y": 100,
-      "width": 375,
-      "height": 812,
-      "cornerRadius": 40,
-      "fillColor": "#FFFFFF",
-      "strokeColor": "#E5E5EA",
-      "strokeWidth": 1
-    }
-  ],
-  "groups": [],
-  "metadata": {
-    "targetPlatform": "web",
-    "targetFramework": "react"
-  }
-}
-```
-
-## Required Fields
-
-Each shape must have:
-- `id`: Unique string
-- `type`: ShapeType enum value
-- `x`, `y`: Canvas coordinates
-- `width`, `height`: Dimensions
-
-## Common Properties
-
-| Property | Type | Description |
-|----------|------|-------------|
-| cornerRadius | number | Border radius |
-| fillColor | string | Fill color (#HEX) |
-| strokeColor | string | Stroke color |
-| strokeWidth | number | Stroke width |
-| text | string | Text content |
-| textColor | string | Text color |
-| fontSize | number | Font size |
-
-## Design Guidelines
-
-- Use 8px grid
-- Common spacing: 8, 12, 16, 20, 24, 32, 40, 48
-- Common radius: 4, 8, 12, 16, 20, 24
+| Command | Description |
+| :--- | :--- |
+| `add <name>` | Install a skill (e.g., `button`, `card`, `hero`) |
+| `add <repo>` | Install directly from a GitHub repository |
+| `list` | View trending and popular skills |
+| `search <q>` | Search the global registry |
 
 ---
 
-Generate JSON for the following requirement:
-````
+## The Registry
 
----
+A decentralized collection of design intelligence.
 
-## 🤝 Contributing
-
-We welcome new Skill submissions to the gallery! Each Skill is a standardized `.md` file.
-
-Since **"Everything is a file,"** simply fork this repository and add your Skill Markdown file.
-
----
-
-## 📄 License
-
-MIT License © 2026
+- **Frameworks**: `react/shadcn`, `vue/element`, `swift/swiftui`
+- **Systems**: `apple/human-interface`, `google/material-3`
+- **Agents**: `agent/frontend-expert`, `agent/code-architect`
 
 ---
 
 <div align="center">
-
-**[uixskills.com](https://uixskills.com)** · Everything is a file
-
+  <br />
+  <sub>MIT License © 2026 UIXskills</sub>
+  <br />
+  <br />
 </div>

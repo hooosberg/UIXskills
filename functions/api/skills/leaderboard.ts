@@ -15,7 +15,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
 
         let query = supabase
             .from('skills')
-            .select('id, title, description, thumbnail_url, view_count, like_count, created_at, tech_base, system_type, source_name, user:profiles!skills_user_id_fkey(username, avatar_url)')
+            .select('id, title, description, thumbnail_url, view_count, like_count, created_at, tech_base, system_type, user:profiles!skills_user_id_fkey(username, avatar_url)')
             .eq('status', 'approved');
 
         if (trending) {

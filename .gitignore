@@ -1,3 +1,6 @@
+# Ignore .DS_Store
+**/.DS_Store
+
 # Ignore everything
 /*
 
@@ -9,3 +12,7 @@
 !uixskill.json
 !README.md
 !.gitignore
+!.claude/
+!packages/
+packages/uixskills/node_modules/
+packages/uixskills/dist/
