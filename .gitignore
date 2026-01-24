@@ -12,7 +12,6 @@
 !uixskill.json
 !README.md
 !.gitignore
-!.claude/
 !packages/
 packages/uixskills/node_modules/
 packages/uixskills/dist/
