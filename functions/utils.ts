@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+// Triggering redeploy for env vars
 
 // Environment variables interface provided by Cloudflare Pages Functions
 export interface Env {
@@ -17,7 +18,7 @@ export const corsHeaders = {
 export const createSupabaseClient = (env: Env) => {
   const url = env.SUPABASE_URL || env.VITE_SUPABASE_URL;
   const key = env.SUPABASE_ANON_KEY || env.VITE_SUPABASE_ANON_KEY;
-  
+
   if (!url || !key) {
     throw new Error('Missing Supabase configuration');
   }
