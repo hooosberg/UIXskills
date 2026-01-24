@@ -5,6 +5,7 @@
 !uixskills/
 !public/
 !docs/
+!functions/
 !uixskill.json
 !README.md
 !.gitignore
