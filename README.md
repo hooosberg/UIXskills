@@ -43,34 +43,32 @@ npx uixskills add button
 npx uixskills add owner/repo
 ```
 
-## The Workflow
-
-Designed mainly for **Claude Code**, **Cursor**, and **Windsurf**.
-
-### 01. The Protocol
-AI Agents generate layouts using our standardized **JSON Protocol** generic enough for structure, specific enough for code generation.
-
-### 02. The Whiteboard
-Import JSON into the [Skill Whiteboard](https://uixskills.com/whiteboard). Visually refine structure. Bind standardized interactions.
-
-### 03. The Injection
-Drag "Skills" (e.g., `apple/ios-design`, `shadcn/minimal`) onto your wireframes.
-
-### 04. The Code
-Export. The AI receives explicitly referenced design tokens, not hallucinated CSS.
-
----
-
 ## CLI Commands
 
-The `uixskills` command-line tool is your gateway to the registry.
+### List & Search
+```bash
+# List top skills
+npx uixskills list
 
-| Command | Description |
-| :--- | :--- |
-| `add <name>` | Install a skill (e.g., `button`, `card`, `hero`) |
-| `add <repo>` | Install directly from a GitHub repository |
-| `list` | View trending and popular skills |
-| `search <q>` | Search the global registry |
+# Search for skills
+npx uixskills search glassmorphism
+```
+
+### Advanced Usage
+```bash
+# Install a skill by name
+npx uixskills add button
+
+# Install from any GitHub repository
+# You can install any repository that has a uixskill.json file directly:
+npx uixskills add owner/repo
+
+# Install a core library
+npx uixskills add hooosberg/UIXskills
+
+# Install to a custom directory
+npx uixskills add button --dir ./my-skills
+```
 
 ---
 

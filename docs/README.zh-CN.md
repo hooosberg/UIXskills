@@ -43,34 +43,32 @@ npx uixskills add button
 npx uixskills add owner/repo
 ```
 
-## 工作流
-
-专为 **Claude Code**、**Cursor** 和 **Windsurf** 设计。
-
-### 01. 协议 (The Protocol)
-AI Agent 使用我们标准化的 **JSON 协议** 生成布局——通用性足以描述结构，特异性足以生成代码。
-
-### 02. 白板 (The Whiteboard)
-将 JSON 导入 [Skill 白板](https://uixskills.com/whiteboard)。可视化微调结构。绑定标准化交互。
-
-### 03. 注入 (The Injection)
-将 "Skill" (例如 `apple/ios-design`, `shadcn/minimal`) 拖拽到你的线框图中。
-
-### 04. 代码 (The Code)
-导出。AI 接收到的是明确引用的设计令牌 (Design Tokens)，而不是凭空捏造的 CSS。
-
----
-
 ## CLI 命令行
 
-`uixskills` 命令行工具是你通往技能注册表的网关。
+### 列表与搜索 (List & Search)
+```bash
+# 列出热门技能
+npx uixskills list
 
-| 命令 | 描述 |
-| :--- | :--- |
-| `add <name>` | 安装技能 (例如 `button`, `card`, `hero`) |
-| `add <repo>` | 直接从 GitHub 仓库安装 |
-| `list` | 查看热门和流行技能 |
-| `search <q>` | 搜索全球注册表 |
+# 搜索技能
+npx uixskills search glassmorphism
+```
+
+### 高阶用法 (Advanced Usage)
+```bash
+# 按名称安装技能
+npx uixskills add button
+
+# 从任意 GitHub 仓库安装
+# 你可以直接安装任何包含 uixskill.json 文件的仓库：
+npx uixskills add owner/repo
+
+# 安装核心库
+npx uixskills add hooosberg/UIXskills
+
+# 安装到自定义目录
+npx uixskills add button --dir ./my-skills
+```
 
 ---
 
