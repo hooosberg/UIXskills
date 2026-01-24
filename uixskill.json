@@ -5,11 +5,8 @@
   "author": "hooosberg",
   "repository": "https://github.com/hooosberg/UIXskills",
   "files": [
-    "components/",
-    "lib/",
     "uixskills/",
-    "types.ts",
-    "constants.tsx"
+    "README.md"
   ],
   "keywords": [
     "react",
