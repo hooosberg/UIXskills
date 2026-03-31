@@ -9,6 +9,9 @@
 !public/
 !docs/
 !functions/
+!.github/
+!.github/workflows/
+!.github/workflows/**
 !uixskill.json
 !README.md
 !.gitignore
